@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = function(props) {
-  console.log(props);
+  // console.log(props);
 
   return (
     <View>
@@ -36,6 +36,12 @@ const HomeScreen = function(props) {
           return props.navigation.navigate('Colour');
         }}
         title="Go to Colour Screen"
+      />
+      <Button
+        onPress={function() {
+          return props.navigation.navigate('Square');
+        }}
+        title="Go to Square Screen"
       />
     </View>
   );
