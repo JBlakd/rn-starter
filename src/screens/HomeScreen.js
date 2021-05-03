@@ -25,6 +25,18 @@ const HomeScreen = function(props) {
         }}
         title="Go to Image Screen"
       />
+      <Button
+        onPress={function() {
+          return props.navigation.navigate('Counter');
+        }}
+        title="Go to Counter Screen"
+      />
+      <Button
+        onPress={function() {
+          return props.navigation.navigate('Colour');
+        }}
+        title="Go to Colour Screen"
+      />
     </View>
   );
 };
